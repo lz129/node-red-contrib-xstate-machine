@@ -1,5 +1,5 @@
 {
-  "name": "node-red-contrib-xstate-machine",
+  "name": "@lz129/node-red-contrib-xstate-machine",
   "version": "1.2.4",
   "description": "Xstate-based state machine implementation using state-machine-cat visualization for node red.",
   "license": "MIT",
