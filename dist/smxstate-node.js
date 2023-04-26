@@ -254,7 +254,7 @@ result = (function(__send__,__done__){
 		if( service )
 			service.stop();
 
-		let machine = xstate.Machine(
+		let machine = xstate.createMachine(
 			context.xstate.blueprint.toJS(),
 			context.xstate.machineConfig ? context.xstate.machineConfig : undefined);
 
@@ -266,7 +266,7 @@ result = (function(__send__,__done__){
 		context.xstate.machine = machine;
 
 		let transitionFcn = (state) => {
-			node.status({fill: 'green', shape: 'dot', text: 'state: ' + JSON.stringify(state.value)});
+			node.status({fill: state.done ? 'red':'green', shape: 'dot', text: 'state: ' + JSON.stringify(state.value)});
 
 			let payload = {
 				state: state.value,
