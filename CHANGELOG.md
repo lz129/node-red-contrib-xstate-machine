@@ -1,5 +1,35 @@
 # node-red-contrib-xstate-machine
 
+## 1.3.3
+
+### Patch Changes
+
+- 0f5d597: Fix crash when trying to run an invalid machine setup
+
+## 1.3.2
+
+### Patch Changes
+
+- 38f62f5: Add node-red version requirement to package.json
+- b3d0fbf: Fix error on rendering state chart if states contain spaces, quotes etc.
+- 46bb305: Fix crashing node-red if invalid xstate configuration is deployed
+
+## 1.3.1
+
+### Patch Changes
+
+- bb4ae00: Fix dropped output messages that get sent during flow restart or node deployment, e.g. through an initial entry action (issue #95)
+
+## 1.3.0
+
+### Minor Changes
+
+- ea32705: Update dependencies to latest minor version
+
+### Patch Changes
+
+- bf0a6e7: Fix problem with usage of setTimeout and clearTimeout
+
 ## 1.2.4
 
 ### Patch Changes
